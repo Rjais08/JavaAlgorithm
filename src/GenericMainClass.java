@@ -1,6 +1,7 @@
 import GenericClass.GenericClass;
 import GenericClass.Pair;
 import GenericClass.PrintGeneric;
+import GenericClass.GenericClassWithUpperBound;
 
 public class GenericMainClass {
 
@@ -61,13 +62,14 @@ public class GenericMainClass {
         printGeneric.printT(123);
     }
 
-    // Bounded Generics.
-    //It can be used at generic class and methods.
-    //Upper Bound (<T extends Number>) means T can be of type Number or its Subclass only.
-    // Here superclass (in this example Number) we can have interface too.
-    //Multi Bound
-    //Upper Bound
-    //(Here the extends indicated the type of the class/Interface T can be not the actual inheritance)
+    // upper bound example
+
+    public <T> void printTUpperBound(){
+        GenericClassWithUpperBound<Integer> printGeneric = new GenericClassWithUpperBound<Integer>();
+//        printGeneric.printValue("hello"); // it is throwing error as it will except only till numbers;
+        printGeneric.printValue(123);
+    }
+
 
 
 }

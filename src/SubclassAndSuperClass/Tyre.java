@@ -1,0 +1,6 @@
+package SubclassAndSuperClass;
+
+interface Tyre {
+
+
+}
