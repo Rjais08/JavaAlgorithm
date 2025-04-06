@@ -3,6 +3,11 @@ import GenericClass.Pair;
 import GenericClass.PrintGeneric;
 import GenericClass.GenericClassWithUpperBound;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 public class GenericMainClass {
 
    public Pair<Integer, String> classPair = new Pair<Integer, String>();
@@ -11,7 +16,26 @@ public class GenericMainClass {
 
 //        genericClassForOneVariable();
         System.out.println();
-        mainMethodCallGenericClassForTwoVariable();
+//        mainMethodCallGenericClassForTwoVariable();
+
+        List<String> words = Arrays.asList("apple", "banana", "cherry", "date", "elderberry");
+
+
+        // To calculate unique charater in each sentense;
+
+        Map<Integer, List<String>> resultMap =  words.stream().collect(Collectors.groupingBy(String::length));
+
+        System.out.println(resultMap);
+//        System.out.println(distinctWords);
+
+        System.out.println();
+
+
+
+//        System.out.println(words);
+
+
+
 
 
     }

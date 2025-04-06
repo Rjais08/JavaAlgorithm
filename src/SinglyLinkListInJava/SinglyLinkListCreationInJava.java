@@ -1,6 +1,8 @@
 package SinglyLinkListInJava;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class SinglyLinkListCreationInJava{
 
@@ -16,25 +18,30 @@ private static  ListNode head;
 //        second.next = third;
 //        third.next = fourth;
 //        printSinglyLinkeList(sll.head);
-        sll.insertEnd(1);
-        sll.insertEnd(3);
-        sll.insertEnd(4);
+//        sll.insertEnd(1);
+//        sll.insertEnd(3);
+//        sll.insertEnd(4);
 //        sll.insertEnd(5);
 //        sll.insertEnd(4);
 //        insertBegining(50);
 
 //        printSinglyLinkeList(head);
 //        System.out.println();
-        insertAtSpecifiedPos(2,2);
-        printSinglyLinkeList(head);
+//        insertAtSpecifiedPos(2,2);
+//        printSinglyLinkeList(head);
 //        deleteNodeAtGivenPos(10);
 //        int index = findKey(4, head);
 //        System.out.println(index);
 //        reverseSinglyLinkedList(head);
 
-        System.out.println(findMiddleOfList(head));
-        printSinglyLinkeList(head);
+//        System.out.println(findMiddleOfList(head));
+//        sll.createLoopInLinkedList();
+//        System.out.println(sll.detectLoopforCycle());
+//        System.out.println(sll.detectLoopAndStartNodeCycle().data);
+//        sll.detectLoopforCycleAndRemove();
+//        printSinglyLinkeList(head);
 
+        printSinglyLinkeList(merge(createSortedList(), createSortedList2()));
 
     }
 
@@ -52,6 +59,39 @@ private static  ListNode head;
                     temp = next;
                 }
                 head = previous;
+    }
+
+    public static ListNode merge(ListNode a, ListNode b){
+        ListNode tempa = a;
+        ListNode tempb = b;
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
+        while(tempa != null && tempb != null){
+
+            if(tempa.data <= tempb.data ){
+                if(tail.data < tempa.data) {
+                    tail.next = tempa;
+                    tempa = tempa.next;
+                }else{
+                    tempa = tempa.next;
+                }
+            }else{
+                if(tail.data < tempb.data) {
+                    tail.next = tempb;
+                    tempb = tempb.next;
+                }else{
+                    tempb = tempb.next;
+                }
+            }
+            tail = tail.next;
+        }
+        if(tempa==null){
+            tail.next = tempb;
+        }else{
+            tail.next = tempa;
+        }
+
+        return dummy.next;
     }
 
 
@@ -182,26 +222,120 @@ private static  ListNode head;
         return false;
     }
 
-    public static ListNode detectLoopforCycleStartNode(){
+    public static ListNode createSortedList(){
+        ListNode first = new ListNode(10);
+        ListNode second = new ListNode(15);
+        ListNode third = new ListNode(20);
+        ListNode fourth = new ListNode(25);
+        ListNode fifth = new ListNode(30);
+        ListNode sixth = new ListNode(35);
+        ListNode seventh = new ListNode(40);
+        ListNode eight = new ListNode(45);
+
+        first.next= second;
+        second.next = third;
+        third.next = fourth;
+        fourth.next = fifth;
+        fifth.next = sixth;
+        sixth.next = seventh;
+        seventh.next = eight;
+        eight.next = null;
+
+        return first;
+    }
+
+    public static ListNode createSortedList2(){
+        ListNode first = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = new ListNode(3);
+        ListNode fourth = new ListNode(15);
+        ListNode fifth = new ListNode(50);
+
+        first.next= second;
+        second.next = third;
+        third.next = fourth;
+        fourth.next = fifth;
+        fifth.next = null;
+
+        return first;
+    }
+
+    public static void createLoopInLinkedList(){
+        ListNode first = new ListNode(10);
+        ListNode second = new ListNode(15);
+        ListNode third = new ListNode(20);
+        ListNode fourth = new ListNode(25);
+        ListNode fifth = new ListNode(30);
+        ListNode sixth = new ListNode(35);
+        ListNode seventh = new ListNode(40);
+        ListNode eight = new ListNode(45);
+
+        head = first;
+        first.next= second;
+        second.next = third;
+        third.next = fourth;
+        fourth.next = fifth;
+        fifth.next = sixth;
+        sixth.next = seventh;
+        seventh.next = eight;
+        eight.next = sixth;
+
+    }
+
+    public  boolean detectLoopforCycle(){
         ListNode slowPtr = head;
         ListNode fastPtr = head;
         while (fastPtr!=null && fastPtr.next!=null){
             fastPtr = fastPtr.next.next;
-            slowPtr = slowPtr.next.next;
+            slowPtr = slowPtr.next;
             if(slowPtr == fastPtr){
-             return getCycleStartNode(slowPtr);
+             return true;
+            }
+        }
+        return false;
+    }
+
+    public  ListNode detectLoopAndStartNodeCycle(){
+        ListNode slowPtr = head;
+        ListNode fastPtr = head;
+        while (fastPtr!=null && fastPtr.next!=null){
+            fastPtr = fastPtr.next.next;
+            slowPtr = slowPtr.next;
+            if(slowPtr == fastPtr){
+                return getCycleStartNode(slowPtr);
             }
         }
         return null;
     }
 
-    public static ListNode getCycleStartNode(ListNode slowPtr){
+    public  ListNode getCycleStartNode(ListNode slowPtr){
         ListNode temp = head;
         while(temp != slowPtr){
             temp = temp.next;
             slowPtr = slowPtr.next;
         }
         return slowPtr;
+    }
+
+    public void detectLoopforCycleAndRemove(){
+        ListNode slowPtr = head;
+        ListNode fastPtr = head;
+        while (fastPtr!=null && fastPtr.next!=null){
+            fastPtr = fastPtr.next.next;
+            slowPtr = slowPtr.next;
+            if(slowPtr == fastPtr){
+                removeCycle(slowPtr);
+            }
+        }
+    }
+
+    private void removeCycle(ListNode slowPtr){
+        ListNode temp = head;
+        while(temp.next != slowPtr.next){
+            temp = temp.next;
+            slowPtr = slowPtr.next;
+        }
+        slowPtr.next = null;
     }
 
 
@@ -229,6 +363,8 @@ private static  ListNode head;
             this.data = data;
             this.next = null;
         }
+
+
     }
 
 
