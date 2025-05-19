@@ -1,10 +1,8 @@
 package StackInJava;
 
-import SinglyLinkListInJava.linkListRepresntationInJava;
-
 import java.util.EmptyStackException;
 
-public class StackJava {
+public class StackUsingLinkedListJava {
 
     private ListNode top;
     private int length;
@@ -19,7 +17,7 @@ public class StackJava {
         }
     }
 
-    public StackJava(){
+    public StackUsingLinkedListJava(){
         top = null;
         length =0;
     }
@@ -57,27 +55,6 @@ public class StackJava {
         return top.data;
     }
 
-    public static void main(String[] args) {
-        StackJava stackJava = new StackJava();
-        stackJava.push(5);
-        stackJava.push(4);
-        stackJava.push(3);
-        stackJava.push(2);
-        stackJava.push(1);
-
-        System.out.println(stackJava.peek());
-        stackJava.pop();
-        System.out.println(stackJava.peek());
-        stackJava.pop();
-        System.out.println(stackJava.peek());
-        stackJava.pop();
-        System.out.println(stackJava.peek());
-        stackJava.pop();
-        System.out.println(stackJava.peek());
-        stackJava.pop();
-        System.out.println(stackJava.peek());
-        stackJava.pop();
-    }
 
 
 }

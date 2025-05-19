@@ -8,6 +8,10 @@ public class PrintGeneric<T> {
         this.value = value;
     }
 
+    public T getValue(){
+        return value;
+    }
+
     public <T> void printT(T value){
         System.out.println("This is value of T: " + value);
         System.out.println("This is type of T: " + value.getClass().getName());
