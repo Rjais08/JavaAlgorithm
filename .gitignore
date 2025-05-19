@@ -1,1 +1,9 @@
 *.class
+*.xml
+# Ignore OS or IDE-specific files
+.DS_Store
+Thumbs.db
+.idea/
+# Ignore build output
+/build
+/out
