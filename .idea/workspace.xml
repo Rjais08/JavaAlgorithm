@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37d43b6f-2365-49f5-a407-785cc6ffdcf0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CommonQuestions/GenerateAllPossibleSubSequences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CommonQuestions/MatchingSumBit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CommonQuestions/PrintEveryPossibleSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CommonQuestions/RotateArrayToLeft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CommonQuestions/RotateArrayToRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RSAExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackInJava/NextGreaterElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackInJava/ReverseStringUsingStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAlgorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAlgorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithm/GenericClass/PrintGeneric.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAlgorithm/GenericClass/PrintGeneric.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithm/Java8/StreamInJava8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAlgorithm/Java8/StreamInJava8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithm/SinglyLinkListInJava/SinglyLinkListCreationInJava$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAlgorithm/SinglyLinkListInJava/SinglyLinkListCreationInJava$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithm/SinglyLinkListInJava/SinglyLinkListCreationInJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAlgorithm/SinglyLinkListInJava/SinglyLinkListCreationInJava.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithm/StackInJava/StackJava$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithm/StackInJava/StackJava$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithm/StackInJava/StackJava.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAlgorithm/StackInJava/stackMainClassInJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAlgorithm/StackInJava/stackMainClassInJava.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericClass/PrintGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericClass/PrintGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Jdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java8/OptionalInJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java8/OptionalInJava.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java8/StreamInJava8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java8/StreamInJava8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PoJos/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PoJos/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PoJos/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PoJos/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PoJos/Insurence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PoJos/Insurence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackInJava/StackUsingLinkedListJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackInJava/StackUsingLinkedListJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackInJava/stackMainClassInJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackInJava/stackMainClassInJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackInJava/StackUsingArrayInJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackInJava/StackUsingArrayInJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackInJava/stackMainClassInJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackInJava/StackMainClassInJava.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,16 +196,24 @@
     "Application.ConsumerChaningJava8.executor": "Run",
     "Application.ConsumerJava8.executor": "Run",
     "Application.FunctionChaining.executor": "Run",
+    "Application.GenerateAllPossibleSubSequences.executor": "Run",
     "Application.GenericMainClass.executor": "Run",
     "Application.Java8Feature.executor": "Run",
     "Application.Jdbc.executor": "Run",
     "Application.MainClass.executor": "Debug",
-    "Application.OptionalInJava.executor": "Debug",
+    "Application.MatchingSumBit.executor": "Debug",
+    "Application.OptionalInJava.executor": "Run",
+    "Application.PrintEveryPossibleSubstring.executor": "Run",
+    "Application.RSAExample.executor": "Debug",
+    "Application.RotateArrayToLeft.executor": "Run",
+    "Application.RotateArrayToRight.executor": "Run",
     "Application.SinglyLinkListCreationInJava.executor": "Run",
     "Application.StackJava.executor": "Run",
-    "Application.StreamInJava8.executor": "Debug",
+    "Application.StackMainClassInJava.executor": "Run",
+    "Application.StreamInJava8.executor": "Run",
     "Application.SupplierJava8.executor": "Run",
-    "Application.Test.executor": "Run",
+    "Application.Test.executor": "Debug",
+    "Application.Test2.executor": "Run",
     "Application.stackMainClassInJava.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -222,16 +225,16 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.6229885",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.OptionalInJava">
-    <configuration name="Jdbc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JDBC.Jdbc" />
+  <component name="RunManager" selected="Application.StackMainClassInJava">
+    <configuration name="GenerateAllPossibleSubSequences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CommonQuestions.GenerateAllPossibleSubSequences" />
       <module name="JavaAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JDBC.*" />
+          <option name="PATTERN" value="CommonQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,12 +242,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OptionalInJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java8.OptionalInJava" />
+    <configuration name="PrintEveryPossibleSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CommonQuestions.PrintEveryPossibleSubstring" />
       <module name="JavaAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java8.*" />
+          <option name="PATTERN" value="CommonQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -252,12 +255,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamInJava8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java8.StreamInJava8" />
+    <configuration name="RotateArrayToLeft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CommonQuestions.RotateArrayToLeft" />
       <module name="JavaAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PoJos.*" />
+          <option name="PATTERN" value="CommonQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -265,15 +268,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+    <configuration name="RotateArrayToRight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CommonQuestions.RotateArrayToRight" />
       <module name="JavaAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CommonQuestions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stackMainClassInJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StackInJava.stackMainClassInJava" />
+    <configuration name="StackMainClassInJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StackInJava.StackMainClassInJava" />
       <module name="JavaAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -287,11 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OptionalInJava" />
-        <item itemvalue="Application.StreamInJava8" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Jdbc" />
-        <item itemvalue="Application.stackMainClassInJava" />
+        <item itemvalue="Application.StackMainClassInJava" />
+        <item itemvalue="Application.RotateArrayToLeft" />
+        <item itemvalue="Application.RotateArrayToRight" />
+        <item itemvalue="Application.GenerateAllPossibleSubSequences" />
+        <item itemvalue="Application.PrintEveryPossibleSubstring" />
       </list>
     </recent_temporary>
   </component>
@@ -395,74 +404,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GenericClass/PrintGeneric.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="33" />
+          <url>file://$PROJECT_DIR$/src/StackInJava/StackUsingArrayInJava.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Java8/PredicateJava8.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Java8/PredicateJava8.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GenericMainClass.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SinglyLinkListInJava/SinglyLinkListCreationInJava.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SinglyLinkListInJava/SinglyLinkListCreationInJava.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SinglyLinkListInJava/SinglyLinkListCreationInJava.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SinglyLinkListInJava/SinglyLinkListCreationInJava.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JDBC/Jdbc.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Java8/StreamInJava8.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Java8/OptionalInJava.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Java8/OptionalInJava.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="58" />
+          <url>file://$PROJECT_DIR$/src/StackInJava/ReverseStringUsingStack.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -30,8 +30,8 @@ public class StreamInJava8 {
 //        streamInJava8.printStringWithLength();
 //        streamInJava8.printSingleDigit(new int[]{1,1,2,3,3,4,4});
 //        streamInJava8.genericMethodForValuesOccurringNTimes2(new int[]{1,1,2,3,3,4,4,4}, 2);
-//        streamInJava8.printTop3HighestPaidEmployeePerDepartment(streamInJava8.getListOfEmployee());
-        streamInJava8.printAverageSalaryOfEmployeeInEachDepartment(streamInJava8.getListOfEmployee());
+        streamInJava8.printTop3HighestPaidEmployeePerDepartment(streamInJava8.getListOfEmployee());
+//        streamInJava8.printAverageSalaryOfEmployeeInEachDepartment(streamInJava8.getListOfEmployee());
     }
 
     public void useFilter(List<Integer> arrList){
@@ -144,7 +144,7 @@ public void genericMethodForValuesOccurringNTimes(int[] nums, int n){
 
     public void genericMethodForValuesOccurringNTimes2(int[] nums, int n){
 
-        List<Integer> list = IntStream.of(nums).boxed().collect(Collectors.toMap(Function.identity(), val-> 1L, Long::sum)).entrySet().stream().peek(System.out::println).filter(a-> a.getValue() == n)
+        List<Integer> list = Arrays.stream(nums).boxed().collect(Collectors.toMap(Function.identity(), val-> 1L, Long::sum)).entrySet().stream().peek(System.out::println).filter(a-> a.getValue() == n)
                 .map(Map.Entry::getKey).collect(Collectors.toList());
 
         System.out.println(list);
