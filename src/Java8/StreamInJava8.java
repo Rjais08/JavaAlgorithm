@@ -6,6 +6,7 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class StreamInJava8 {
     // use of map
@@ -30,8 +31,10 @@ public class StreamInJava8 {
 //        streamInJava8.printStringWithLength();
 //        streamInJava8.printSingleDigit(new int[]{1,1,2,3,3,4,4});
 //        streamInJava8.genericMethodForValuesOccurringNTimes2(new int[]{1,1,2,3,3,4,4,4}, 2);
-        streamInJava8.printTop3HighestPaidEmployeePerDepartment(streamInJava8.getListOfEmployee());
+//        streamInJava8.printTop3HighestPaidEmployeePerDepartment(streamInJava8.getListOfEmployee());
 //        streamInJava8.printAverageSalaryOfEmployeeInEachDepartment(streamInJava8.getListOfEmployee());
+//        streamInJava8.printGroupByDepartment(streamInJava8.getListOfEmployee());
+          streamInJava8.getTotalSalaryByDepartment(streamInJava8.getListOfEmployee());
     }
 
     public void useFilter(List<Integer> arrList){
@@ -169,6 +172,21 @@ public void genericMethodForValuesOccurringNTimes(int[] nums, int n){
         return employees;
     }
 
+    // TODO Group Employee by department;
+
+    public  void printGroupByDepartment(List<Employee> employeeList){
+        Map<String, List<Employee>> employeeListByDepartment = employeeList.stream().collect(Collectors.groupingBy(Employee::getDepartment));
+        System.out.println(employeeListByDepartment);
+    }
+
+    // #TODO Calculate the total salary of Employee by Department
+
+   public void getTotalSalaryByDepartment(List<Employee> employeeList){
+        Map<String, Double> totalSalaryByDepartment = employeeList.stream().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.summingDouble(Employee::getSalary)));
+
+       System.out.println(totalSalaryByDepartment);
+   }
+
     public void printTop3HighestPaidEmployeePerDepartment(List <Employee> employees){
 
                 employees.stream()
@@ -193,7 +211,20 @@ public void genericMethodForValuesOccurringNTimes(int[] nums, int n){
                 .forEach((dept, avg) -> System.out.println(dept + "has average salary of ->" + avg));
     }
 
+    //Create immutable list which accept null value (immutable means list which can not be modified after creation);
 
+
+ public static void getMutableImutableList(){
+     List<String> immutablelist = Stream.of("Red", "Green", null).toList();
+//        immutablelist.add("yellow");
+     System.out.println(immutablelist);
+     List<String> modifiableList =Stream.of("Red", "Green", null).collect(Collectors.toList());
+     modifiableList.add("green");
+     modifiableList.add("Red");
+     modifiableList.add(null);
+     modifiableList.add("red");
+     System.out.println(modifiableList);
+ }
 
 }
 
