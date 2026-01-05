@@ -5,7 +5,7 @@ public class MinValueInArray {
     {
         int[] arr = new int[]{1,2,3,4,-2,6,7,8,7,10};
         printArray(arr);
-        int res = findMin(null);
+        int res = findMin(arr);
         System.out.println(res);
 
     }
